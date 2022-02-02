@@ -1,0 +1,50 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00308F;">
+    <div class="container-fluid">
+        <button type="button" class="btn btn-link btn-sm"  style="margin-right: 10px" [routerLink]="['/login']">Admin</button>
+        <button type="button2" class="btn btn-link btn-sm"   [routerLink]="['/admin']"> Dashboard</button>
+        <a class="navbar-brand" href="#"><b>Electronic Devices</b></a>
+     
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+       
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search for products" size="50" aria-label="Search">
+            <button class="btn btn-primary btn" type="submit" style="margin-right: 100px;">Search</button>
+          </form>
+          
+          <button type="button1" class="btn btn-primary btn-sm" style="margin-left: 300px; ">LogIn</button>
+        <button type="button2" class="btn btn-primary btn-sm"  style="margin-left: 10px" [routerLink]="['/signup']">Sign Up</button>
+           
+      </div>
+    </div>
+</nav> -->
+
+
+<header>
+  <div class="navbar navbar-dark  shadow-sm" style="background-color: darkslategrey">
+      <div class="navbar-brand align-item-center d-flex">
+          <!-- <i style="font-size: 40px;" class="fas fa-shipping-fast">&nbsp;
+              
+          </i> -->
+          <strong style="font-size: 30px;">Electronic Devices</strong>
+          <div class="form-group">
+              <input type="text" class="form-control"  placeholder="search products">
+          </div>
+          <span class="fas fa-search search-icon"></span>
+
+
+      </div>
+      <span style="padding-left: 10%;"></span>
+      <!-- <a class="btn btn-primary" [routerLink]="['/register']" style="text-align: right;">Sign up</a> -->
+   
+      <a class="btn btn-link" [routerLink]="['/login']">Admin Login</a>
+
+      <a class="btn btn-link" [routerLink]="['/admin']">Dashboard</a>
+      <button routerLink="cart"  class="btn btn-primary" style="background-color: darkslategrey">
+          <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+  </div>
+</header>

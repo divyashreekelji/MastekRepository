@@ -1,0 +1,23 @@
+<div class="container" ><p>Welcome to Dashboard..!!</p>
+</div>
+ 
+  <!-- <div class="sidebar"> -->
+    <ul class="sidenav">    
+    <a [routerLink]="['dashboard']">Dashboard</a>
+    <a [routerLink]="['company']">Company</a>
+    <a [routerLink]="['productpage']">Products</a>
+    <a [routerLink]="['category']">Categories</a>
+    <a [routerLink]="['order']">Orders</a>
+    <a [routerLink]="['logout']">Logout</a>
+  </ul>
+  <section>
+    <!-- <app-addcompany></app-addcompany> -->
+      <router-outlet></router-outlet>
+
+  </section>
+  <div class="form-group">
+    <button class="btn btn-primary btn-block">Update</button>
+  </div>
+
+
+  
